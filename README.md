@@ -21,7 +21,8 @@ Then you should follow these commands.
 
 ```
 git init
-heroku create --buildpack https://github.com/HashNuke/heroku-buildpack-elixir.git
+heroku apps:create NAME-OF-YOUR-APP --buildpack https://github.com/HashNuke/heroku-buildpack-elixir.git
+heroku config:set MIX_ENV=prod
 git add -A && git commit -m 'Initial commit'
 git push heroku master
 ```
