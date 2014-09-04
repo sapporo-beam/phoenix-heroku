@@ -1,4 +1,4 @@
-# Phoenix-heroku
+# PhoenixHeroku
 
 To start your new Phoenix application you have to:
 
@@ -9,7 +9,7 @@ Now you can visit `localhost:4000` from your browser.
 
 ## Deploying
 
-You need adding files to deploy on [Heroku][heroku].
+You need adding files to deploy on [Heroku][https://www.heroku.com/].
 
 ```
 .
@@ -29,6 +29,4 @@ git push heroku master
 
 ## Notes
 
-* If you choose to change the application's structure, you could manually start the router from your code like this `Phoenix-heroku.Router.start`
-
-[heroku]: https://www.heroku.com/
+* If you choose to change the application's structure, you could manually start the router from your code like this `PhoenixHeroku.Router.start`

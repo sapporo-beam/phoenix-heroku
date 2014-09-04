@@ -4,13 +4,17 @@ defmodule PhoenixHeroku.Mixfile do
   def project do
     [ app: :phoenix_heroku,
       version: "0.0.1",
-      elixir: "~> 0.13.0",
+      elixir: "~> 1.0.0-rc1",
+      elixirc_paths: ["lib", "web"],
       deps: deps ]
   end
 
   # Configuration for the OTP application
   def application do
-    [mod: { PhoenixHeroku, [] }]
+    [
+      mod: { PhoenixHeroku, [] },
+      applications: [:phoenix, :cowboy, :logger]
+    ]
   end
 
   # Returns the list of dependencies in the format:
@@ -20,7 +24,8 @@ defmodule PhoenixHeroku.Mixfile do
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
     [
-      {:phoenix, github: "phoenixframework/phoenix"}
+      {:phoenix, "0.4.0"},
+      {:cowboy, "~> 1.0.0"}
     ]
   end
 end
