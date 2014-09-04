@@ -9,7 +9,7 @@ Now you can visit `localhost:4000` from your browser.
 
 ## Deploying
 
-You need adding files to deploy on [Heroku][https://www.heroku.com/].
+You need adding files to deploy on [Heroku](https://www.heroku.com/).
 
 ```
 .
